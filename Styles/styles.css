@@ -235,6 +235,72 @@ body{
     font-size: 16px;
     color: #727272;
 }
+/* -------------------What our Customers Says (Extra Section)------------------- */
+.customers-review h2{
+    font-size: 35px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+.review-container{
+    display: flex;
+    justify-content: space-around;
+}
+.customers-says{
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    border-radius: 8px;
+    background-color: blanchedalmond;
+    height: 150px;
+    width: 200px;
+    padding: 15px;
+}
+@keyframes sliding{
+    0% {
+        background-color: whitesmoke;
+    }
+    50% {
+        transform: translate(-25%); 
+        } 
+    100% { 
+        transform: translate(25%);
+    } 
+}
+.customers-says{
+    animation: sliding 5s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
+}
+.profile-details{
+    text-align: center;
+}
+.profile-details .name{
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+.profile-details .date{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(147, 138, 138);
+}
+
+.review{
+    margin-top: 20px;
+    text-align: center;
+}
+.stars{
+    font-size: 18px;
+    color: #FF900E;
+}
+.review-content{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(42, 42, 42);
+}
+
+
 /* -------------------Our Sponsors------------------- */
 .our-sponsors{
     text-align: center;
